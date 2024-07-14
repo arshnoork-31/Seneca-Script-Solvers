@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Seneca Software Developers Club</title>
+    <link rel="stylesheet" href="/styles/styles2.css">
+</head>
+<body>
+    <header>
+        <img id="logo1" src="/images/ssdc_logo.png" alt="Seneca Software Developers Club Logo">
+        <nav id="top">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="team.html">TEAM</a>
+            <a href="event.html">EVENTS</a>
+            <a href="contactUs.html">CONTACT US</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <section id="map" >
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.535134010521!2d-79.34914918450472!3d43.79550227911624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2b41c015bbb3%3A0xb90a62e5ddbb2e09!2sSeneca%20College%20Newnham%20Campus!5e0!3m2!1sen!2sca!4v1651244191751!5m2!1sen!2sca"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        
+        <div class="centered-content">
+            <div id="send-message-button-container">
+                <button id="send-message-button">Send a Message</button>
+            </div>
+            <div id="contact-form-container" class="hidden">
+                <div id="contact-form">
+                    <form action="submit_form.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            
+        
+        <section id="contact-info">
+            <p>Email: <a href="mailto:info.ssdcseneca@gmail.com">info.ssdcseneca@gmail.com</a></p>
+            <p>Seneca Software Developers Club</p>
+            <p><a href="#map" class="map-link">1750 Finch Avenue East<br>Toronto Ontario M2J 2X5<br>Canada</a></p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/seneca_sdc/"><img src="images/instagram-1675670_1280 (1).png" height="50px" alt="Instagram"></a>
+                <a href="https://www.facebook.com/campusgroups"><img src="images/facebook_logo.png" height="50px" alt="Facebook"></a>
+                <a href="https://x.com/campusgroups"><img src="images/twitter.png" alt="Twitter" height="50px"></a>
+                <a href="https://www.linkedin.com/company/seneca-software-developers-club/posts/?feedView=all"><img src="images/linkedin.png" alt="LinkedIn" height="50px"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img id="logo2" src="/images/ssdc_logo.png" alt="Seneca Software Developers Club Logo">
+        <br>
+        <center>&copy; 2024 Seneca Software Developers Club.</center>
+        <br>
+        <div id="links" style="margin-left: 150px; margin-right: 150px;">
+            <a href="https://www.linkedin.com/company/seneca-software-developers-club/">LinkedIn</a>
+            <a href="https://discord.com/channels/1241175460839297084/1243872278979154029">Discord</a>
+            <a href="https://www.instagram.com/seneca_sdc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+            <a href="https://www.campusgroups.com/terms?view=privacy">Privacy Policy</a>
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="contactUs.html">Contact Us</a>
+        </div>
+        <p style="margin-left: 120px; margin-right: 120px;">
+            Disclaimer: The content and views expressed on this website are intended solely for informational purposes related to the activities of the Seneca Software Developers Club. The club does not endorse any specific products or services unless explicitly stated.
+        </p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>

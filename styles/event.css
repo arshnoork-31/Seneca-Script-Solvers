@@ -1,0 +1,150 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#top a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#top a:hover {
+    background-color: #333;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 60px; /* Added margin to prevent collision */
+}
+
+#events_bg {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.image-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.image-text-overlay h1 {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0px;
+}
+
+/* Events Container */
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.event-card {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.event-content h3 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.event-content p {
+    color: #666;
+    font-size: 1em;
+}
+
+.event-details {
+    color: #888;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+#logo2 {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+h1{
+    margin: 20px;
+}
+
+section{
+    padding: 50px;
+    margin: 50px;
+}
+
+#top a:hover {
+    text-decoration: underline;
+}

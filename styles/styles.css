@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#top a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header img {
+    max-height: 50px;
+}
+
+#top {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    flex-grow: 1;
+}
+
+#top a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+}
+
+#top a:hover {
+    text-decoration: underline;
+}
+
+#logo1 {
+    width: 55px;
+}
+
+#team_png {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 30%;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    align-items: flex-start; 
+    color: black;
+    padding: 20px;
+    transition:ease;
+}
+
+.team {
+    width: 150px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the container */
+    margin: 20px 0; /* Space above and below the image */
+}
+
+figure {
+    text-align: center; /* Center the caption below the image */
+    margin: 0; /* Remove default margin */
+}
+
+figcaption {
+    margin-top: 10px; /* Space between the image and the caption */
+}
+
+figcaption .additional-info {
+    display: none; /* Hide additional info by default */
+}
+
+figcaption:hover .additional-info {
+    display: block; /* Show additional info on hover */
+    margin-top: 5px; /* Add margin between text and caption */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#links {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: lightgrey;
+    color: white;
+}
+
+footer img {
+    width: 55px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+.innovative-heading {
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px #888888;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.highlight {
+    color: #e74c3c;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #top a {
+        margin: 5px 0;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div {
+        margin: 10px;
+    }
+
+    footer #links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer a {
+        margin: 5px 0;
+    }
+}
+
+.left-content {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.right-content {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: right; /* Align text to the right */
+}
+/* styles.css */
+
+/* Body and General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo1 {
+    max-height: 50px;
+}
+
+#top a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#top a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Main Content Styling */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.team {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.left-content,
+.right-content {
+    max-width: 50%;
+    margin: 20px auto; /* Center the content boxes horizontally */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+
+}
+
+.left-content h2,
+.right-content h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.left-content p,
+.right-content p {
+    color: #666;
+    font-size: 16px;
+    text-align: justify; /* Justify the paragraph text */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+h1 {
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 36px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+    line-height: 1.4; /* Improved line height for readability */
+}
+
+.image-container {
+    position: relative;
+    max-width: 100%;
+    background-color: black;
+}
+
+#team_png {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.image-text-overlay h1 {
+    font-size: 60px;
+    color: white;
+}
+
+body {
+    background-color: white; 
+}
+
+#oneTeam {
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin: 30px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #6a11cb 0%, red 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease;
+}
+
+#oneTeam:hover {
+    text-decoration: underline;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+}
+
+
+.left-content:hover,
+.right-content:hover {
+    transform: translateY(-15px);
+}
+

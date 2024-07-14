@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#top
+ a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#top a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#top a:hover {
+    background-color: #333;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 60px; /* Added margin to prevent collision */
+}
+
+#about_bg {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.image-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.image-text-overlay h1 {
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Container */
+.content-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+#logo2 {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #fff; /* Background color for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    border-radius: 8px; /* Rounded corners for the box */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.content-section h2:hover {
+    transform: translateX(5px); /* Move 5px to the right on hover */
+}
+
+#current-page:visited {
+    text-decoration: underline; /* Keep underline for current page */
+}

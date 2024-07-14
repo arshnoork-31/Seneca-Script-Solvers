@@ -1,0 +1,399 @@
+/* styles2.css */
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contact-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+}
+
+#top a:hover {
+    text-decoration: underline;
+}
+
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form form {
+    width: 100%;
+}
+
+#contact-form label,
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    width: 100%;
+    margin: 10px 0;
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+#contact-form input:hover,
+#contact-form textarea:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+#contact-form button {
+    padding: 8px 16px; /* Smaller padding for a smaller button */
+    background-color: #ff0000; /* Red background */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for hover effect */
+}
+
+#contact-form button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+#send-message-button-container {
+    margin: 20px 0;
+}
+
+#send-message-button {
+    padding: 10px 20px;
+    background-color: rgb(198, 23, 23);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send-message-button:hover {
+    background-color: rgb(198, 23, 23);
+}
+
+/* General styling for other elements */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header img {
+    max-height: 50px;
+}
+
+#top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#top a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#top a:hover {
+    text-decoration: underline;
+    background-color: #555;
+}
+
+#logo1 {
+    width: 55px;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 36px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    line-height: 1.4;
+}
+
+#map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#contact-info {
+    text-align: center;
+}
+
+#contact-info .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#contact-info .social-links a {
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer img {
+    width: 55px;
+    display: block;
+    margin: 0 auto;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+}
+
+footer .social-links img {
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-links img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #top a {
+        margin: 5px 0;
+    }
+
+    footer #links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .social-links a {
+        margin: 5px 0;
+    }
+}
+
+/* styles2.css */
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+header img {
+    height: 80px;
+}
+
+nav#top a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#map {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#contact-form,
+#contact-info {
+    margin: 20px 0;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: rgb(198, 23, 23); /* Highlight border color on focus */
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: rgb(198, 23, 23); /* red button background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: darkred; /* Darker blue on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+#contact-info {
+    text-align: center;
+}
+
+#contact-info p {
+    margin: 5px 0;
+}
+
+#contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#map {
+    width: 100%; /* Ensure the map fills the entire width of its container */
+    max-width: 100%; /* Ensure it does not exceed its natural size */
+    display: block; /* Ensure it behaves like a block element */
+    margin: 20px 0; /* Optional margin adjustments */
+}
+#contact-info p:hover {
+    color: black;
+}
+
