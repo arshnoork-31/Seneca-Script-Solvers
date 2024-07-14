@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #1e1e1e;
+    background-color: #333;
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -61,7 +61,8 @@ header {
 .image-text-overlay h1 {
     font-size: 4em;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px #333;
+    ;
 }
 
 /* Content Container */
@@ -87,7 +88,7 @@ header {
 
 /* Footer Styling */
 footer {
-    background-color: #1e1e1e;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -117,7 +118,7 @@ footer {
     line-height: 1.6;
     padding: 20px;
     background-color: #fff; /* Background color for the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    box-shadow: 0 4px 8px #333; /* Box shadow for a subtle lift */
     border-radius: 8px; /* Rounded corners for the box */
     margin-bottom: 20px; /* Space between paragraphs */
 }
@@ -134,4 +135,56 @@ footer {
 
 #current-page:visited {
     text-decoration: underline; /* Keep underline for current page */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#top {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center;
+    flex-grow: 1;
+}
+
+#top a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#top a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.page{
+    margin: 10px;
+    padding: 10px;
+}
+header{
+    height: 70px;
+}
+footer{
+    font-size: larger;
 }
